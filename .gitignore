@@ -9,4 +9,5 @@ karma.conf.js
 tsconfig.json
 cypress/videos/
 cypress/screenshots/
+cypress/allure-results/
  
