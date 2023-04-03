@@ -1,0 +1,40 @@
+{
+    "name": "latori-automation",
+    "version": "1.0.0",
+    "description": "Latori Automation",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "npx eslint ./cypress",
+        "lint-fix": "echo \"TODO: Add auto-lint-fix command once lint-rules are enforced post code cleanup\"",
+        "cypress": "node_modules\\.bin\\cypress open",
+        "cypress-headless": "node_modules\\.bin\\cypress-tags run --record --key 66e9c5e8-199c-450b-a7a5-e60ad3e01c72 -e TAGS='not @ignore' --browser chrome"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.17.0",
+        "@shelex/cypress-allure-plugin": "^2.37.0",
+        "cypress": "^12.9.0",
+        "cypress-cucumber-preprocessor": "^3.0.0",
+        "cypress-mochawesome-reporter": "^3.3.0",
+        "cypress-xpath": "^1.6.2",
+        "eslint-plugin-cypress": "^2.12.1",
+        "multiple-cucumber-html-reporter": "^1.18.0",
+        "read-excel-file": "^5.2.20"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": false,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    },
+    "dependencies": {
+        "cypress-real-events": "^1.7.0",
+        "cypress-waitfor": "^1.1.0",
+        "pdf-parse": "^1.1.1"
+    }
+}

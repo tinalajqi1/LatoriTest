@@ -1,0 +1,12 @@
+/src/
+/dist/
+/node_modules/
+angular.json
+browserslist
+CONTRIBUTING.md 
+tslint.json
+karma.conf.js 
+tsconfig.json
+cypress/videos/
+cypress/screenshots/
+ 
