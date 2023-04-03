@@ -2,7 +2,7 @@ To build the application run 'npm install'
 
 Open cypress using 'npx cypress open'.
 
-To see allure results in terminal use 'npx cypress run --env allure=true' which will also create allure-results
+To see allure results in terminal use 'npx cypress run --env allure=true' which will also create allure-results folder
 
 To generate allure report type 'allure generate' 
 
